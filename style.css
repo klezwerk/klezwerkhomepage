@@ -54,9 +54,21 @@ p1, p {
     }
 }
 
-@media screen and (max-width:572px){
-    tbody { font-size: 0.6rem;
+
+@media screen and (max-width: 572px) {
+    table, tbody {
+        width:95%; font-size: 0.7rem;
     }
+}
+@media screen and (min-width:573px){
+    table, tbody{ font-size: 1rem; 
+        width:80%;
+    }
+}
+
+
+#kontakt:hover{
+    cursor:pointer;
 }
 
 #termine {
