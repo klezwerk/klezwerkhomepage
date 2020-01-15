@@ -45,31 +45,30 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#konzerte">Termine</a>
                     </li>
-                    <li class="nav-item">
-                        <a onclick="myFunction()" class="nav-link" id="kontakt">Kontakt</a>
-                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Kontakt
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="mailto:klezwerk-booking@posteo.de">klezwerk-booking@posteo.de</a>
+                        </div>
+                      </li>
                 </ul>
             </div>
         </nav>
     </header>
-    
-    <script>
-    function myFunction() {
-      var myWindow = window.open("", "MsgWindow", "width=300,height=100");
-      myWindow.document.write("<p>E-Mail: <u>klezwerk-booking@posteo.de </u></p>");
-    }
-    </script>
+
 
     <!-- Begin page content -->
     <main role="main" class="flex-shrink-0">
 
 
-        
-                <div class="text-center">
-                    <h1 style="position:relative; margin-top:4.5rem"> Klezwerk </h1>
-                </div>
-            
-       
+
+        <div class="text-center">
+            <h1 style="position:relative; margin-top:4.5rem"> Klezwerk </h1>
+        </div>
+
+
         <div class="container-fluid mt-4">
             <div class="row justify-content-center">
                 <div class="col-xs-12 col-md-12 col-lg-8">
@@ -109,69 +108,65 @@
                     </p1>
                 </div>
             </div>
-            </div>
+        </div>
 
-            <!-- Konzerte -->
-                <div id="konzerte" 
-                    style="text-align:center; position:relative; margin:0 auto; font-size:2rem; padding-top:70px; padding-bottom:45px;">
-                    <span style="border-bottom:4px solid black;">Termine</span>
-                </div>
+        <!-- Konzerte -->
+        <div id="konzerte"
+            style="text-align:center; position:relative; margin:0 auto; font-size:2rem; padding-top:70px; padding-bottom:45px;">
+            <span style="border-bottom:4px solid black;">Termine</span>
+        </div>
 
-                <table id="termine" style="position:relative; text-align:center; margin:0 auto">
-                    <tbody>
-                          <tr>
-                            <th>07.08.2020</th>
-                            <th>Volksbühne Kaulenberg, 18 Uhr</th>
-                            <th>Halle</th>
-                        </tr>
-                        <tr>
-                            <th>13.06.2020</th>
-                            <th>Nepomuk-Bar</th>
-                            <th>Leipzig</th>
-                        </tr>
-                        <tr>
-                            <th>27.01.2020</th>
-                            <th>Holocaust-Gedenktag, 18 Uhr</th>
-                            <th>Leipzig Hbf </th>
-                        </tr>
-                        
-                        
-                        <tr style="color:lightgrey">
-                            <th>14.12.2019</th>
-                            <th>Nacht der Hausmusik</th>
-                            <th>MZ Leipzig</th>
-                        </tr>
-                        <tr style="color:lightgrey">
-                            <th>12.10.2019</th>
-                            <th>Saisonabschluss Annalinde</th>
-                            <th>Leipzig</th>
-                        </tr>
-                        <tr style="color:lightgrey">
-                            <th>28.09.2019</th>
-                            <th>Kulturjurte, heiter bis wolkig</th>
-                            <th>Leipzig</th>
-                        </tr>
-                        <tr style="color:lightgrey">
-                            <th>06.09.2019</th>
-                            <th>Passagenfest Leipzig</th>
-                            <th>Leipzig</th>
-                        </tr>
-                        <tr style="color:lightgrey">
-                            <th>05.07.2019</th>
-                            <th>Nepomuk-Bar</th>
-                            <th>Leipzig</th>
-                        </tr>
+        <table id="termine" style="position:relative; text-align:center; margin:0 auto">
+            <tbody>
+                <tr style="color:lightgrey">
+                    <th>12.01.2019</th>
+                    <th>Café Palaver</th>
+                    <th>Karlsruhe</th>
+                </tr>
+                <tr style="color:lightgrey">
+                    <th>05.07.2019</th>
+                    <th>Nepomuk-Bar</th>
+                    <th>Leipzig</th>
+                </tr>
+                <tr style="color:lightgrey">
+                    <th>06.09.2019</th>
+                    <th>Passagenfest Leipzig</th>
+                    <th>Leipzig</th>
+                </tr>
+                <tr style="color:lightgrey">
+                    <th>28.09.2019</th>
+                    <th>Kulturjurte, heiter bis wolkig</th>
+                    <th>Leipzig</th>
+                </tr>
+                <tr style="color:lightgrey">
+                    <th>12.10.2019</th>
+                    <th>Saisonabschluss Annalinde</th>
+                    <th>Leipzig</th>
+                </tr>
+                <tr style="color:lightgrey">
+                    <th>14.12.2019</th>
+                    <th>Nacht der Hausmusik</th>
+                    <th>MZ Leipzig</th>
+                </tr>
+                <tr>
+                    <th>27.01.2020</th>
+                    <th>Holocaust-Gedenktag, 18 Uhr</th>
+                    <th>Leipzig Hbf </th>
+                </tr>
+                <tr>
+                    <th>13.06.2020</th>
+                    <th>Nepomuk-Bar</th>
+                    <th>Leipzig</th>
+                </tr>
+                <tr>
+                    <th>07.08.2020</th>
+                    <th>Volksbühne Kaulenberg, 19 Uhr</th>
+                    <th>Halle</th>
+                </tr>
+            </tbody>
+        </table>
 
-                        <tr style="color:lightgrey">
-                            <th>12.01.2019</th>
-                            <th>Café Palaver</th>
-                            <th>Karlsruhe</th>
-                        </tr>
-
-                    </tbody>
-                </table> 
-
-                <!-- <ul style="list-style: none; margin-left: 7vw; margin-right: 2vw">
+        <!-- <ul style="list-style: none; margin-left: 7vw; margin-right: 2vw">
                     <li class="event">
                     <span class="date" style="width:20%; display: inline-block; text-align: center;">23.02.2020</span>
                     <span class="venue" style="width: 45%; display: inline-block; text-align: center">Nacht der Hausmusik</span>
@@ -181,16 +176,16 @@
                  
                   </ul> -->
 
-                
 
-            <!-- <div id="table" style="position:relative; text-align:center; margin:0 auto; width:100%">
+
+        <!-- <div id="table" style="position:relative; text-align:center; margin:0 auto; width:100%">
 
 
                  27.01.2020 &nbsp; &nbsp; &nbsp; &nbsp;  Holocaust-Gedenktag &nbsp; &nbsp; &nbsp; &nbsp; Hbf Leipzig, Bahnsteig 24 (18 Uhr)&nbsp; &nbsp;
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
             
                 </div> -->
-                
+
     </main>
 
     <!-- the footer -->
@@ -206,14 +201,16 @@
 
         </div>
         <!-- Impressum und Datenschutz-->
-       
+
 
         <div class="text-center mb-4">
             <a href="impressum.html">Impressum</a> und <a href="datenschutz.html">Datenschutz</a>
         </div>
     </footer>
 
-
+<!-- <script> $(".navbar ul li a").click(function() {
+    $(".navbar").hide();
+});</script> -->
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
