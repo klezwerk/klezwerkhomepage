@@ -46,12 +46,19 @@
                         <a class="nav-link" href="#konzerte">Termine</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="mailto:klezwerk-booking@posteo.de" target="_blank">Kontakt</a>
+                        <a onclick="myFunction()" class="nav-link" id="kontakt">Kontakt</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
+    
+    <script>
+    function myFunction() {
+      var myWindow = window.open("", "MsgWindow", "width=300,height=100");
+      myWindow.document.write("<p>E-Mail: <u>klezwerk-booking@posteo.de </u></p>");
+    }
+    </script>
 
     <!-- Begin page content -->
     <main role="main" class="flex-shrink-0">
@@ -110,8 +117,8 @@
                     <span style="border-bottom:4px solid black;">Termine</span>
                 </div>
 
-                <table id="termine" style="position:relative; text-align:center; margin:0 auto; width:80%;">
-                    <tbody style="font-size: 1rem;">
+                <table id="termine" style="position:relative; text-align:center; margin:0 auto">
+                    <tbody>
                           <tr>
                             <th>07.08.2020</th>
                             <th>Volksbühne Kaulenberg, 18 Uhr</th>
