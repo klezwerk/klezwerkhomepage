@@ -19,12 +19,20 @@ h1 {
 }
 
 
+body {
+    font-family: 'Montserrat', sans-serif;
+}
 
 
 p1, p {
-    font-family: 'Montserrat', sans-serif;
     text-align: justify;
     font-size: 90%;
+}
+
+@media screen and (min-width:1700px) {
+    p1 {
+      font-size: 95%;
+    }
 }
 
 @media screen and (max-width:1190px) {
@@ -66,21 +74,14 @@ p1, p {
     }
 }
 
-
-#kontakt:hover{
-    cursor:pointer;
-}
-
-#termine {
-    font-family: 'Montserrat', sans-serif;
-}
-
-
-#konzerte {
-    font-family: 'Montserrat', sans-serif;
+#formal {
+    font-family: Helvetica, sans-serif;
 }
 
     /* Social Button Style */
+   
+   
+   
     .scl-btn {
         padding: 10px;
         font-size: 20px;
@@ -93,10 +94,10 @@ p1, p {
       }
       /* Hover Effect */
       .scl-btn:hover {
-        opacity: 0.8;
+        opacity: 0.5;
         text-align: center;
         text-decoration: none;
-        color: white;
+        color: black;
       }
       /* Round buttons */
       .scl-crcl {
