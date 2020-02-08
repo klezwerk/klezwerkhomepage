@@ -20,7 +20,7 @@
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <!--link html-file to CSS-sheet-->>
-    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <!--<script src="script.js"></script> -->
 </head>
 
@@ -29,7 +29,7 @@
 
     <header>
         <!-- Fixed navbar -->
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="formal">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -44,11 +44,16 @@
                             href="https://www.youtube.com/channel/UCpyzs-7PSg_WgfGGnRptKLQ">Videos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#konzerte">Termine</a>
+                        <a class="nav-link" href="index.html#termine">Termine</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="mailto:klezwerk-booking@posteo.de" target="_blank">Kontakt</a>
-                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Kontakt
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="mailto:klezwerk-booking@posteo.de">klezwerk-booking@posteo.de</a>
+                        </div>
+                      </li>
                 </ul>
             </div>
         </nav>
@@ -109,18 +114,19 @@
         </div>
     </main>
 
-    <!-- the footer -->
-    <footer class="footer">
+     <!-- the footer -->
+     <footer class="footer">
         <!--the SocialMediaButtons -->
-        <div class="text-center mt-5 mb-4" id="socialMedia">
+        <div class="text-center mt-6 mb-4" id="socialMedia">
             <a target="_blank" href="https://www.youtube.com/channel/UCpyzs-7PSg_WgfGGnRptKLQ"
-                class="scl-btn scl-crcl shadow fab fa-youtube"></a>
+                class="scl-btn scl-crcl fab fa-youtube"></a>
             <a target="_blank" href="https://www.facebook.com/pg/Klezwerk/posts/?ref=page_internal"
-                class="scl-btn scl-crcl shadow fab fa-facebook-f"></a>
+                class="scl-btn scl-crcl fab fa-facebook-f"></a>
             <a target="_blank" href="https://www.instagram.com/klezwerk/?hl=de"
-                class="scl-btn scl-crcl shadow fab fa-instagram"></a>
+                class="scl-btn scl-crcl fab fa-instagram"></a>
 
         </div>
+         <!-- Impressum und Datenschutz-->
 
         <div class="text-center mb-4">
             <a href="impressum.html">Impressum</a> und <a href="datenschutz.html">Datenschutz</a>
