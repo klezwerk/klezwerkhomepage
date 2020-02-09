@@ -16,11 +16,15 @@
 h1 {
     font-family: 'GutterVomit', sans-serif;
     font-size: 10vw;
+    font-weight: default;
+    font-style: default;
 }
 
 
 body {
     font-family: 'Montserrat', sans-serif;
+    font-weight: default;
+    font-style: default;
 }
 
 
